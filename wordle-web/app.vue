@@ -13,10 +13,7 @@
           icon="mdi-help-circle"
           @click="showHelpDialog = !showHelpDialog"
         />
-        <v-btn
-          icon="mdi-theme-light-dark"
-          @click="switchTheme"
-        />
+        <v-btn icon="mdi-theme-light-dark" @click="switchTheme" />
       </v-app-bar>
 
       <HelpDialog v-model="showHelpDialog" />
@@ -29,25 +26,25 @@
 </template>
 
 <script setup lang="ts">
-import { useTheme } from 'vuetify/lib/framework.mjs'
+import { useTheme } from "vuetify/lib/framework.mjs";
 
 const router = useRouter();
 const showHelpDialog = ref(false);
-const theme = useTheme()
+const theme = useTheme();
 
 function switchTheme() {
-  if (theme.global.name.value === 'light') {
-    setDarkTheme()
+  if (theme.global.name.value === "light") {
+    setDarkTheme();
   } else {
-    setLightTheme()
+    setLightTheme();
   }
 }
 
 function setLightTheme() {
-  theme.global.name.value = 'light'
+  theme.global.name.value = "light";
 }
 
 function setDarkTheme() {
-  theme.global.name.value = 'dark'
+  theme.global.name.value = "dark";
 }
 </script>
