@@ -26,6 +26,7 @@
 
 ### Lecture 2: 4/4: Deployment (Assignment 1) 🟢
 - Complete application 
+- Classes in C#/Java and TS/JS
 - Basic unit testing with Jest
   - Add testing: `npm i --save-dev @nuxt/test-utils vitest @vue/test-utils happy-dom playwright-core`
 - Build deployment for front-end in Azure.
@@ -74,27 +75,7 @@
 - Functions
 - Conditional Rendering: https://vuejs.org/guide/essentials/conditional.html
 - Events: https://vuejs.org/guide/essentials/event-handling.html
-
-### Next Time
-- Input: https://vuejs.org/guide/essentials/forms.html
-- Grid System
-- Display and sizing
-- Icons
-- Theming
-- Elevation
-- Height and width (h- & w-"
 - Spacing (padding and margins) (CSS Box Model)
-- Components: Containment
-  - Buttons
-  - Cards
-  - Chips
-  - Lists
-- Components: Tables
-- Components: Form Inputs
-  - Selects
-  - Switches
-  - Text: Fields and Areas
-  - Combos
 
 
 ## Week 3
@@ -107,80 +88,105 @@
 - Watchers: https://vuejs.org/guide/essentials/watchers.html
 - Transitions: https://vuejs.org/guide/built-ins/transition.html
 
-
-### Lecture 6. 4/18: ASP.NET Intro 🟣
-- Starting an ASP.NET API Project
-- Creating a simple API
-- Unit Testing the API
-- Program.cs
-- Controllers
-- Services (DI)
+### Lecture 6. 4/18: More components 🟣
+- Grid System
+- Display and sizing
+- Icons
+- Theming
+- Elevation
+- Height and width (h- & w-"
+- Components: Containment
+  - Buttons
+  - Cards
+  - Chips
+  - Lists
+- Animation
 
 
 ## Week 4
-### Lecture 7. 4/23: Entity Framework Intro 🟢🟣
-- Creating a context
-- Creating models
-- Migrations
-- Deployment (Site and Database)
-
+### Lecture 7. 4/23: Wrap up UI and ASP.NET Intro 🟢🟣
+- Input: https://vuejs.org/guide/essentials/forms.html
+- Components: Tables
+- Components: Form Inputs
+  - Selects
+  - Switches
+  - Text: Fields and Areas
+  - Combos
+- Slots and Emits
+- What is MVC and why are we doing a SPA
+  - Quick Intro to ASP.NET MVC
+- Starting an ASP.NET API Project
+  - Build the Word of the Day API endpoint
+  - Creating a simple API
+  - Program.cs
+  - Controllers
+  - Basic Routing
+  - Services (DI)
+- CORS
 
 ### Lecture 8. 4/25: 🟣
+- DevOps
 - More ASP.NET and EF and homework 3 material
+- Unit Testing the API
+  - Basic Unit Testing
+  - Unit testing with services
+  - Unit testing with WebApplicationFactory
+- Unit vs Integration Testing
 
 
 ## Week 5
 ### Lecture 9. 3/30: 🟢
+- What is EF
+- Creating a context
+- Creating models
+- Migrations
 - Initial EF Context
 - Word object
 - Word migration
-- Word Controller that returns a word
-- Word Service
-- Service Dependency Injection
+- EF Migration Deltas to a table
 
 ### Lecture 10. 5/2: 🟢
-- API Post
-- DTOs
-- EF Migration Deltas to a table
-- Basic EF Querying
-- Axios using Post
-
---- After this point is subject to significant change ---
+- Word Service
+- Word Controller that returns a word
+- Handling multi-threading issues with creating the word of the day.
+- Service Dependency Injection
+- Deployment (Site and Database)
+- API configuration: Swagger in production
+- Troubleshooting Azure
 
 ## Week 6
 ### Lecture 11. 5/7: 
-- API unit testing: database, services, integration.
-- App Refactor:
-  - Add game features like end and restart
-  - Add solver and componentize
-  - Handle the word API not responding
-  - API configuration: Swagger in production
-  - Action updates, versioning, file names, warnings
-  - Sizing of letters/buttons with useDisplay
-  - Unit testing letters with DI on useDisplay
-  - New App bar and UI cleanup
-  - New starting page and default route
-  - Theme update and add of 'Unknown' color
-  - Split LetterResult from LetterButton
-  - Move AddWordTest to about page
-  - Custom icon and favicon
-  - Google Search Console and 
+- Meg's Awesome Changes
+  - Global Base URL for Axios
+  - Restructure App Async in Constructor
+
+- Unit Testing with Databases
+  - API unit testing: database, services, integration.
+  - Testing with DI and Services
+
+- EF Parent/Child (Word with child Game)
+  - Adding additional migrations
+  - API Post
+  - DTOs
+
+--- After this point is subject to significant change ---
+
 
 ### Lecture 12. 5/09: 
-- Troubleshooting Azure
-- Vue services
-- EF Parent-Child relationships
-- Querying with Includes
+- EF Querying
+  - Querying with Includes
 - EF unit testing
+- EF unit test base
 - Model builder cascade deletes
-- Adding of DateWord and Migration
 
 ## Week 7
 ### Lecture 13. 5/14: 
-- Classes in C#/Java and TS/JS
+- Posting the results of a game
+- Returning a DTO with statistics for a word/WOTD
+- Axios using Post
 - Redirecting root on API to the Wordle site
 - Word of the day controller and tests
-- Handling multi-threading issues with creating the word of the day.
+- GroupBy: Returning stats for all words
 
 ### Lecture 14. 5/16:
 - Unique indexes
@@ -189,6 +195,10 @@
 - Get method query parameters on API endpoints
 - Load Word of the day in App
 - Integration testing
+- Miscellaneous
+  - Custom favicon
+  - New starting page and default route
+- Vue services (Provide and Inject)
 
 ## Week 8
 ### Lecture 15. 5/21: 
@@ -196,6 +206,7 @@
 - Using GroupBy, Sort
 - Questions from the homework
 - Lots of other stuff pertaining to homework
+- Google Analytics
 
 ### Lecture 16, 5/23
 - Database rollback and Migration consolidate
